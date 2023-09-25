@@ -2,16 +2,22 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     
+    
 }
 .card{
     height: auto;
     width: 600px;
-    margin: 20px auto;
+    margin: 10px auto 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+  }
+  h1{
+    border-bottom: 4px solid #49a6e9;
+    width:max-content;
+    margin: 0px auto 40px;
   }
   .card img {
     height: 300px;
@@ -23,6 +29,8 @@
     margin: 20px auto;
     padding: 8px;
     border-radius: 3px;
+    background: none;
     color: red;
     font-size: 18px;
+    cursor: pointer;
   }
