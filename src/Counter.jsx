@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+var a = 0;
 const Counter = () => {
   const [count, setCount] = useState(0);
 
@@ -9,7 +10,7 @@ const Counter = () => {
   }
 
   function Res() {
-    setCount(0);
+    setCount(a);
   }
 
   function Inc() {

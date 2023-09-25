@@ -13,7 +13,7 @@ function App() {
          <Link to='/'>Home</Link>&nbsp;&nbsp;
          <Link to='/counter'>Counter</Link>&nbsp;&nbsp;
          <Link to='/todolist'>TodoList</Link>
-    </div>
+     </div>
          
          <h1 style={{textAlign: 'center'}}>Home page</h1>
 
