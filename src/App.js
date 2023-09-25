@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import reviews from './data';
 
 function App() {
+  const [reviews, setReviews] = useState(reviews);
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <h1 style={{textAlign: 'center', letterSpacing: '1px', borderBottom: '4px solid #49a6e9', width: 'max-content', margin: '0 auto'}}>Edupoly Reviews</h1>
+       {
+        reviews.map((a,i)=>{
+          return <div>
+                    <div className='card'>
+                       <img src={a.image} alt='img'/>
+                       <h5>{a.name}</h5>
+                       <h4>{a.job}</h4>
+                       <p>{a.text}</p>
+                    </div>
+               </div>
+        })
+       }
     </div>
   );
 }
