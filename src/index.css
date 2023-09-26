@@ -4,3 +4,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+.card{
+  width: 400px;
+  height: 500px;
+  box-shadow: -4px 8px 25px 1px rgba(0,0,0,0.75);
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+}
+.card img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 8px solid #46a7e6;
+  margin-bottom: 10px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.card h5{
+  letter-spacing: 1px;
+}
+.card h4{
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #46a7e6;
+}
+.card p{
+  color: #777;
+  font-size: 14px;
+  margin-top: 20px;
+}
