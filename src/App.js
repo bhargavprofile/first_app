@@ -1,12 +1,22 @@
 import './App.css';
-import StudentForm from './StudentForm';
+import { Provider } from 'react-redux';
+import store from './store';
+import Counter from './components/Counter';
+import Todolist from './components/Todolist';
+import Count100 from './components/count100';
 
 function App() {
   return (
-    <div style={{padding:'10px',border:'2px solid #000'}}>
-       <h1 style={{margin: '0px'}}>App</h1>
-       <StudentForm/>
+    <Provider store={store}>
+    <div className="App">
+      <h1 style={{textDecoration:'underline'}}>APPS</h1>
+      <div className='component'>
+        <Counter/>{<br/>}
+        <Count100/>{<br/>}
+        <Todolist/>
+      </div>
     </div>
+  </Provider>
   );
 }
 
