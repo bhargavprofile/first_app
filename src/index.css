@@ -3,22 +3,50 @@
     padding: 0px;
     box-sizing: border-box;
 }
-form{
-    margin-bottom: 20px
+.apps{
+    display: flex;
+    gap: 50px;
 }
-label{
-    padding-left: 20px;
+.counter-card{
+    height: 300px;
+    width: 400px;
+    background-color: #ad1;
+    padding: 50px;
+    text-align: center;
 }
-input{
-    margin: 0px 0px 5px 10px;
+.counter-heading{
+    font-size: 38px;
 }
-button{
-    margin-left: 20px;
+.counter_btns{
+    padding: 5px 15px;
+    font-size: 30px;
+    margin-top: 30px;
 }
-table tr td{
-    padding: 10px;  
+.todo-card{
+    height: 300px;
+    width: 400px;
+    background-color: teal;
+    padding: 15px;
+    text-align: center;
 }
-p{
-    margin-left: 90px;
-    color: red;
+input[type='text']{
+    padding: 3px;
+}
+li{
+    margin-bottom: 10px;
+}
+
+.addbtn{
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 5px;
+}
+.del{
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+
 }
