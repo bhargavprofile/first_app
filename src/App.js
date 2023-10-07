@@ -1,12 +1,16 @@
+import { Provider } from 'react-redux';
 import './App.css';
-import StudentForm from './StudentForm';
+import Products from './features/products/Products';
+import { store } from './store';
 
 function App() {
   return (
-    <div style={{padding:'10px',border:'2px solid #000'}}>
-       <h1 style={{margin: '0px'}}>App</h1>
-       <StudentForm/>
+   <Provider store={store}>
+   <div style={{padding:'10px'}}>
+       {/* <h1 style={{margin: '0px'}}>App</h1> */}
+       <Products/>
     </div>
+    </Provider>
   );
 }
 

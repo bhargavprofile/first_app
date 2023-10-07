@@ -2,23 +2,40 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-form{
-    margin-bottom: 20px
+.container{
+    display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+    flex-wrap:wrap;
+    padding: 1% 4%;
 }
-label{
-    padding-left: 20px;
+.product-card{
+    height: 350px;
+    width: 300px;
+    /* border: 2px solid; */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+   background-color: #aec4eb; 
+   border-radius: 5px;   
 }
-input{
-    margin: 0px 0px 5px 10px;
+.product-card img{
+    height: 150px;
+    margin-top: 10px;
 }
-button{
-    margin-left: 20px;
+.price{
+    color: green;
 }
-table tr td{
-    padding: 10px;  
-}
-p{
-    margin-left: 90px;
+.rate{
     color: red;
+}
+.product-name{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.descri{
+    margin-bottom: 10px;
 }
