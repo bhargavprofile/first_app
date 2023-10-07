@@ -46,7 +46,8 @@ const Products = () => {
                 <h1 className="product-name">{product.title.slice(0, 15)}</h1>
                 <p className="descri">{product.description.slice(0, 100)}</p>
                 <b className="price">
-                  Price: <span style={{ color: "#000" }}> {product.price}</span>{" "}
+                  Price:{" "}
+                  <span style={{ color: "#000" }}> {`$` + product.price}</span>{" "}
                 </b>{" "}
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <b className="rate">
