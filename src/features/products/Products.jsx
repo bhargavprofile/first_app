@@ -3,7 +3,7 @@ import { useGetProductsByNameQuery } from "../../services/products";
 
 const Products = () => {
   const { isLoading, data } = useGetProductsByNameQuery();
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   //   const [n, setN] = useState(data);
 
   console.log(data);
