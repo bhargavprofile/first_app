@@ -1,19 +1,20 @@
 import React from "react";
 import { useGetPokemonByNameQuery } from "../../services/pokemon/pokemon";
+import PokemonDetails from "./PokemonDetails";
 
 const Pokemon = () => {
-  const { data, isLoading } = useGetPokemonByNameQuery([]);
+  const { data, isLoading } = useGetPokemonByNameQuery();
   console.log(data);
-  data &&
-    data.map((a) => {
-      console.log(a);
-    });
+
   return (
     <div>
       <h1>Pokemon</h1>
-      <ul></ul>
-
-      <div></div>
+      <ul>
+        {data &&
+          data.results.map((pokemon) => {
+            return <PokemonDetails pkmonprops={pokemon.name}></PokemonDetails>;
+          })}
+      </ul>
     </div>
   );
 };
