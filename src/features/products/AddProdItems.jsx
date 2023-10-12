@@ -1,8 +1,12 @@
 import React from "react";
 import { useFormik } from "formik";
-import { useAddProductMutation } from "../../services/products";
+import {
+  useAddProductMutation,
+  useLazyGetProductsByNameQuery,
+} from "../../services/products";
 
-function Addproducts() {
+function AddProdItems() {
+  var [rfn] = useLazyGetProductsByNameQuery();
   var [addfn] = useAddProductMutation();
 
   var addproductForm = useFormik({
@@ -14,11 +18,11 @@ function Addproducts() {
     },
     onSubmit: (values) => {
       addfn(values).then(() => {
-        console.log("added Successfully");
+        alert("added Successfully");
+        rfn();
       });
     },
   });
-  addproduct;
 
   return (
     <div className="addproducts-page">
@@ -31,7 +35,7 @@ function Addproducts() {
           onChange={addproductForm.handleChange}
           onBlur={addproductForm.handleBlur}
         />
-        {<br />}
+        <br />
         <input
           type="text"
           name="price"
@@ -39,7 +43,7 @@ function Addproducts() {
           onChange={addproductForm.handleChange}
           onBlur={addproductForm.handleBlur}
         />
-        {<br />}
+        <br />
         <input
           type="text"
           name="description"
@@ -47,7 +51,7 @@ function Addproducts() {
           onChange={addproductForm.handleChange}
           onBlur={addproductForm.handleBlur}
         />
-        {<br />}
+        <br />
         <input
           type="text"
           name="image"
@@ -55,7 +59,7 @@ function Addproducts() {
           onChange={addproductForm.handleChange}
           onBlur={addproductForm.handleBlur}
         />
-        {<br />}
+        <br />
         <button className="add-btn" type="submit">
           Add Product
         </button>
@@ -64,4 +68,4 @@ function Addproducts() {
   );
 }
 
-export default Addproducts;
+export default AddProdItems;
